@@ -55,6 +55,16 @@ h4 {
   gap: 1rem;
 }
 
+/* signup component */
+.signup {
+  height: 500px;
+}
+
+/* login component */
+.login {
+  height: 330px;
+}
+
 @media only screen and (max-width: 1023px) {
   .column {
     grid-template-columns: 1fr;

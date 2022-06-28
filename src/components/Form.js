@@ -1,8 +1,8 @@
 import styles from "../assets/styles/Form.module.css";
 
-export default function Form({ children, ...rest }) {
+export default function Form({ children, className, ...rest }) {
   return (
-    <form className={`${styles.signup} ${styles.form}`} {...rest}>
+    <form className={`${styles.form} ${className}`} {...rest}>
       {children}
     </form>
   );
