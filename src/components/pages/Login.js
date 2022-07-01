@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../Button";
 import Checkbox from "../Checkbox";
 import Form from "../Form";
@@ -16,9 +17,11 @@ export default function Login() {
         />
         <TextInput type="password" placeholder="Enter password" icon="lock" />
         <Checkbox text="I agree to the Terms &amp; Conditions" />
-        <Button>Login Now</Button>
+        <Button>
+          <span>Login Now</span>
+        </Button>
         <div className="info">
-          Don't have an account? <a href="signup.html">Signup</a> instead.
+          Don't have an account? <Link to="/signup">Signup</Link> instead.
         </div>
       </Form>
     </div>
